@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c47ba901a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/004/753/030/original/portfolio-icon-shadowed-detailed-portfolio-logo-free-vector.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sohel Khan PORTFOLIO</title>
+</head>
+
+<body>
+    <!-- ------------hero------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>S</span>ohel</div>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-times" onclick="closebar()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openbar()"></i>
+            </nav>
+            <div class="hero-text">
+                <h1 class="modify"><span>Hi</span>, I'm <b>Sohel Khan</b></h1>
+                <p>Full Stack Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="IMG_20220524_223024.jpg" alt="my pic">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title modify">About Me</h1>
+                    <p>I am a Full-Stack Developer with experience in HTML, CSS, JavaScript, React, SQL, Dsa, Java. 
+                        I am passionate about creating clean, robust, and user-friendly applications that solve real-world problems.
+                         I am comfortable working with front-end and also some times trying to improve my back-end technologies.
+                          I am highly motivated and always strive to stay up-to-date with the latest developments in web technologies.
+                         I am currently seeking new opportunities to expand my skills and help build innovative products.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="showtab('skills')">Skills</p>
+                        <p class="tab-links" onclick="showtab('experience')">Experience</p>
+                        <p class="tab-links" onclick="showtab('education')">Education</p>
+                    </div>
+                    <!-- ---skills---- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>FullStack Web Developer.</li>
+                            <li><span>Languages</span><br>HTML, CSS, Java, Dsa, Javascript, React.js, Sql.</li>
+                            <li><span>Framework</span><br>Bootstrap.</li>
+                        </ul>
+                    </div>
+                    <!-- ---experience---- -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MARCH 2023</span><br>Besant Technologies
+                                Full Stack Web Development.
+                                Technical Stack Learnt:HTML,CSS
+                                & JavaScript, React.js,
+                                Java ,Data Structure
+                                </li>
+                              
+                        </ul>
+                    </div>
+                    <!-- -----education--- -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduate</span><br>Bachelor of Technology(2021)</li>
+                            <li><span>Diploma</span><br>Diploma of CST</li>
+                            <li><span>Intermediate</span><br>W.B.B.S.E</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------Services------------- -->
+    <!-- <div id="services">
+        <div class="container"></div>
+        <h1 class="sub-title">My Services</h1>
+    </div> -->
+
+    <!-- --------Porjects---------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="apnadukan.png">
+                    <div class="layer">
+                        <h1>E-commerce Design</h1>
+                        
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="my.jpeg">
+                    <div class="layer">
+                    <h1>Tour Website</h1>
+                    <!-- <p>This is a clone Website of Imdb</p> -->
+                    <!-- <a href="https://myimdb-clone.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                
+              
+            </div>
+        </div>
+    </div>
+    <!-- ==============Contact Me=============== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> sohelkhak9@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9134171517</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://github.com/sohellkkhan/"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sohel-khan-b09635217/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://happyhealthylifetips.blogspot.com/"><i class="fa-brands fa-blogger"></i>
+                        <a target="_blank" href="https://twitter.com/sohelkhak786"><i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <a href="/images/SOHEL's Resume.pdf" class="btn" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your message here."></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <div id="success"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyight © Sohel so. By using HTML, CSS & JAVASCRIPT</p>
+        </div>
+    </div>
+
+
+    <!-- link js file -->
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
